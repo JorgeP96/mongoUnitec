@@ -11,13 +11,13 @@ public class MongoUnitecApplication implements CommandLineRunner{
     @Autowired RepositorioMensajito repoMensa;
 
 	public static void main(String[] args) {
-        SpringApplication.run(MongoUnitecApplication.class, args);
+	    SpringApplication.run(MongoUnitecApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-	    /*Mensajito mensa = new Mensajito("Primero","Mi primer mensajito");
+	    Mensajito mensa = new Mensajito("Primero","Mi primer mensajito");
 	    repoMensa.save(mensa);
-        System.out.println("Mensaje guardado");*/
+        System.out.println("Mensaje guardado");
     }
 }

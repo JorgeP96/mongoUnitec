@@ -16,9 +16,9 @@ public class ControladorMensajito {
 
     //Obtener todos
     @CrossOrigin
-    @RequestMapping(value = "/mensajito", method = RequestMethod.GET, headers = {"Accept = application/json"})
-    public ArrayList<Mensajito> obtenerTodos() throws Exception{
-        return (ArrayList<Mensajito>)repoMensa.findAll();
+    @RequestMapping(value="/mensajito", method=RequestMethod.GET, headers = {"Accept=application/json"})
+    public ArrayList<Mensajito> obetenerTodos()throws Exception{
+        return (ArrayList<Mensajito>) repoMensa.findAll();
     }
 
     //Obtener por Id
